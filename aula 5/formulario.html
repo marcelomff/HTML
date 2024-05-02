@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <h1>Preenchendo um Formulario</h1>
+    <form action=""> <!--tag para preencher um formulario-->
+      <div> <!--As tags divs serão utilizadas para quebrar a linha no formulario facilitando a visualização do usuario-->
+        <label for="name">Name<!--'for' que identificará o ID futuramente-->
+          <input type="text" id="name"><!--a tag input retorna o tipo do label que devera ser preenchido-->
+        </label>
+      </div>
+      <div>
+        <label for="email">E-mail
+          <input type="email" id="email" required><!--A função required requer que o usuario preencha o campo conforme esta sendo pedido-->
+    <!--caso o contrario o formulario nao poderá ser enviado-->
+        </label>
+      </div>
+      <div>
+        <label for="">
+          <input type="radio" name="preco" value="150">R$150,00<!--tag radio é utilizada para selecionar uma unica opção
+        separadamente-->
+        </label>
+      </div>
+      <div>
+        <label for="">
+          <input type="radio" name="preco" value="200">R$200,00<!--a tag value preenche automaticamente o campo, pode-se usar
+          para que o usuario tenha como exemplo do que preencher nesse campo-->
+        </label>
+      </div>
+      <div>
+        <label for="">
+          <input type="radio" name="preco" value="250">R$250,00
+        </label>
+      </div>
+      <div>
+        <label for="">
+          <input type="radio" name="preco" value="300">R$300,00
+        </label>
+      </div>
+    <div>
+      <input type="checkbox" name="variosprecos" value="100">R$100,00 <!--A tipo checkbox que tambem é utilizada para selecionar opções
+      como o tipo 'radio', ela te possibilita selecionar mais de uma opção  ao  mesmo tempo. -->
+      <input type="checkbox" name="variosprecos" value="150">R$150,00
+      <input type="checkbox" name="variosprecos" value="200">R$200,00
+      <input type="checkbox" name="variosprecos" value="250">R$250,00
+    </div>
+    <button>Enviar Formulario</button> <!--tag para possibilitar o envio ao terminar o formulario, note-se que o formulario
+    precisará ser preenchido pelo campo email por causa da função required,basta um 'enter' para enviar-->
+  </form>
+</body>
+</html>
